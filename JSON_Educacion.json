@@ -1,0 +1,45 @@
+{
+  "educaciones": [
+    {
+      "id": "1",
+      "institucion": "ESCUELA DE EDUCACIÓN TÉCNICA Nº 1 “ESCOLÁSTICO ZEGADA",
+      "titulo": "Maestro Mayor de Obra",
+      "id_domicilio": "San Salvador de Jujuy, jujuy, Argentina",
+      "fecha_carrera": "1992-1998",
+      "image_institucion": "assets/LOGO_EETN1.png"
+    },
+    {
+      "id": "2",
+      "institucion": "UNJu",
+      "titulo": "Ingeniería Informática",
+      "id_domicilio": "San Salvador de Jujuy, jujuy, Argentina",
+      "fecha_carrera": "1.999 - sin terminar",
+      "image_institucion": "assets/logo_UnJu_1.jpg"
+    },
+    {
+      "id": "3",
+      "institucion": "inet-Ministerio de Producción-Presidencia de la Nación",
+      "titulo": "ANALISTA DEL CONOCIMIENTO - TRAYECTO PROGRAMADOR, Lenguaje de Programación Java",
+      "id_domicilio": "San Salvador de Jujuy, jujuy, Argentina",
+      "fecha_carrera": "2018-2018",
+      "image_institucion": "assets/logo111MIL.png"
+    },
+    {
+      "id": "4",
+      "institucion": "INSTITUTO DE EDUCACIÓN SUPERIOR N° 4 - RAÚL S. ORTIZ - JUJUY",
+      "titulo": "PROFESOR DE EDUCACION SECUNDARIA DE LA MODALIDAD TECNICO PROFESIONAL con concurrencia con título de base MAESTRO MAYOR DE OBRA",
+      "id_domicilio": "San Salvador de Jujuy, jujuy, Argentina",
+      "fecha_carrera": "2004 - 2019",
+      "image_institucion": "assets/logoies4-500x500.png"
+    },
+    {
+      "id": "5",
+      "institucion": "Ministerio de Desarrollo Productivo Argentina - Inti - cessi Argentina",
+      "titulo": "Primera etapa del Plan Argentina Programa #SéProgramar",
+      "id_domicilio": "San Salvador de Jujuy, jujuy, Argentina",
+      "fecha_carrera": "2022 - 2022 - 3 meses",
+      "image_institucion": "assets/argprog_logo[1-Etapa].png",
+      "reminder": true
+    }
+  ]
+}

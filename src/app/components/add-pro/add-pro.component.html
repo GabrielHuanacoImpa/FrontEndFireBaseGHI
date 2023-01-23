@@ -1,0 +1,126 @@
+<form #myForm="ngForm" 
+    class="add-form" 
+    (ngSubmit)="onSubmit()"
+    
+    >
+
+    <!--*ngIf="showAddEdu" -->
+    <p><b>Ingrese los siguietes datos : </b></p>
+  
+    <div class="form-control">
+        <label for="nombre_proyecto"> <b>Nombre del Proyecto : </b></label>
+        <input 
+            type="text" 
+            name="nombre_proyecto" 
+            id="nombre_proyecto" 
+            placeholder="Add a new nombre del Proyecto"
+            [(ngModel)]="nombre_proyecto"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="fecha_inicioP"> <b>Fecha de inicio : </b></label>
+        <input 
+            type="date" 
+            name="fecha_inicioP" 
+            id="fecha_inicioP" 
+            placeholder="Add a new fecha_inicio"
+            [(ngModel)]="fecha_inicioP"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="fecha_finP"> <b>Fecha de fin : </b></label>
+        <input 
+            type="date" 
+            name="fecha_finP" 
+            id="fecha_finP" 
+            placeholder="Add a new fecha_fin"
+            [(ngModel)]="fecha_finP"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="descripcionP"> <b>Descripcion : </b></label>
+        <input 
+            type="text" 
+            name="descripcionP" 
+            id="descripcionP" 
+            placeholder="Add a new descripcionP"
+            [(ngModel)]="descripcionP"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="link"> <b>Link : </b></label>
+        <input 
+            type="text" 
+            name="link" 
+            id="link" 
+            placeholder="Add a new link"
+            [(ngModel)]="link"
+            />
+    </div>
+
+
+    
+    <div class="form-control">
+        <label for="url_imagenes"> <b>Url de las imagenes : </b></label>
+        <input 
+            type="text" 
+            name="url_imagenes" 
+            id="url_imagenes" 
+            placeholder="Add a new url_imagenes"
+            [(ngModel)]="url_imagenes"
+            />
+    </div>
+
+   <div class="form-control">
+    <label for="domicilio"> <b>Domicilio : </b></label>
+    <input 
+        type="text" 
+        name="domicilio" 
+        id="domicilio" 
+        placeholder="Add a new domicilio"
+        [(ngModel)]="domicilio"
+        />
+    </div>
+    
+    <div class="form-control">
+     <label for="tipo_ocupacion"> <b>tipo de la ocupacion : </b></label>
+     <input 
+         type="text" 
+         name="tipo_ocupacion" 
+         id="tipo_ocupacion" 
+         placeholder="Add a new tipo_ocupacion"
+         [(ngModel)]="tipo_ocupacion"
+         />
+     </div>
+
+
+
+    <div class="form-control">
+        <label for="ultima_actualizacion"> <b>Fecha de ultima actualizacion : </b></label>
+        <input 
+            type="date" 
+            name="ultima_actualizacion" 
+            id="ultima_actualizacion" 
+            placeholder="Add a new ultima_actualizacion"
+            [(ngModel)]="ultima_actualizacion"
+            />
+    </div>
+   
+    <div class="form-control">
+        <label for="url_image_logo"> <b>url_image_logo : </b></label>
+        <input 
+            type="text" 
+            name="url_image_logo" 
+            id="url_image_logo" 
+            placeholder="Add a new url_image_logo"
+            [(ngModel)]="url_image_logo"
+            />
+    </div>
+
+
+    <input type="submit" Value="Save Experiencia" class="btn btn-success" data-bs-dismiss="modal">
+</form>

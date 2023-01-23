@@ -1,0 +1,87 @@
+
+<!-- Es nuestra tarjeta-->
+<div 
+    class="educacion"
+    
+    
+>
+<!-- 
+    [ngClass]="{ reminder: educacion.reminder }"
+    (click)="onToggle(educacion)"-->
+
+    <div class= "row"> 
+        <div class="col-md-2">           
+            <img  class="images" src={{educacion.image_institucion}} width="120">
+       </div>
+        
+        <div class="col-md-9">
+            <h5>
+                {{educacion.id}} <br>
+                {{educacion.institucion}} <br>
+                {{educacion.titulo}} <br>
+                {{educacion.domicilio}} <br>
+                {{educacion.fecha_inicio}} - {{educacion.fecha_fin}}<br><br>
+                <!--
+                <app-modal-edit-edu></app-modal-edit-edu>
+                -->
+
+            </h5>
+            <h6>
+                Fecha de ultima actualizacion: {{educacion.ultima_actualizacion}} 
+            </h6>
+
+        </div>
+        <div class="col-md-1">
+            <h5>
+                <div class= "row"> 
+                    <div class="col-md-5">
+
+                        <!--Inicia llamado de Modal Editar Educacion-->
+                        <button type="button" class="border border-0" data-bs-toggle="modal" attr.data-bs-target="#ModalEdu{{educacion.id}}">
+                            <fa-icon 
+                            [icon]="faPencil"
+                            [ngStyle] = "{'color': 'green'}" 
+                            
+                            ></fa-icon>
+                        </button>
+                        <!--Fin llamado de Modal Editar Educacion--> 
+                    </div>
+
+                    <!-- (click)="onEdit(educacion)               "   (click)="onToggleEdit(educacion)"
+                     data-bs-toggle="modal" data-bs-target="#ModalEdu{{educacion.id}}"
+                    -->
+
+                    <div class="col-md-7">
+                        <fa-icon 
+                        [icon]="faTrashCan"
+                        [ngStyle] = "{'color': 'green'}" 
+                        (click)="onDelete(educacion)" 
+                        ></fa-icon>
+                    </div>
+                </div>
+            </h5> 
+        </div>
+
+    </div>
+
+    <!--Inicio de Modal Editar Educacion-->
+    <div class="modal fade" id="ModalEdu{{educacion.id}}" tabindex="-1" aria-labelledby="ModalEduLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ModalEduLabel">Editar Datos</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+                <app-edit-edu [educacion]="educacion" (onEdit)="onEditar($event)" >  </app-edit-edu>
+    
+            </div>
+
+          </div>
+        </div>
+      </div>
+    <!--FIN  de Modal Editar Educacion-->
+
+</div>
+

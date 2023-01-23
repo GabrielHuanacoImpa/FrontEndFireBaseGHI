@@ -1,0 +1,17 @@
+.proyecto {
+    background-color: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20 px;
+    cursor: pointer;
+}
+
+.proyecto.reminder{
+    border-left: 5px solid orange;
+}
+
+.proyecto h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

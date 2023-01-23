@@ -1,0 +1,126 @@
+
+<form #myForm="ngForm" 
+    class="add-form" 
+    (ngSubmit)="onSubmit()"
+    
+    >
+
+    <!--*ngIf="showAddEdu" -->
+    <p><b>Ingrese los siguietes datos : </b></p>
+  
+    <div class="form-control">
+        <label for="nombre_empresa"> <b>Nombre de la Empresa : </b></label>
+        <input 
+            type="text" 
+            name="nombre_empresa" 
+            id="nombre_empresa" 
+            placeholder="Add a new nombre de la empresa"
+            [(ngModel)]="nombre_empresa"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="es_trabajo_actual"> <b>Es trabajo actual : </b></label>
+        <input 
+            type="number" 
+            name="es_trabajo_actual" 
+            id="es_trabajo_actual" 
+            placeholder="Add a new es_trabajo_actual"
+            [(ngModel)]="es_trabajo_actual"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="descripcion"> <b>Descripcion : </b></label>
+        <input 
+            type="text" 
+            name="descripcion" 
+            id="descripcion" 
+            placeholder="Add a new descripcion"
+            [(ngModel)]="descripcion"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="tipo"> <b>Tipo : </b></label>
+        <input 
+            type="text" 
+            name="tipo" 
+            id="tipo" 
+            placeholder="Add a new tipo"
+            [(ngModel)]="tipo"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="fecha_inicio"> <b>Fecha de inicio : </b></label>
+        <input 
+            type="date" 
+            name="fecha_inicio" 
+            id="fecha_inicio" 
+            placeholder="Add a new fecha_inicio"
+            [(ngModel)]="fecha_inicio"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="fecha_fin"> <b>Fecha de fin : </b></label>
+        <input 
+            type="date" 
+            name="fecha_fin" 
+            id="fecha_fin" 
+            placeholder="Add a new fecha_fin"
+            [(ngModel)]="fecha_fin"
+            />
+    </div>
+    
+    <div class="form-control">
+        <label for="lugar"> <b>Lugar : </b></label>
+        <input 
+            type="text" 
+            name="lugar" 
+            id="lugar" 
+            placeholder="Add a new lugar"
+            [(ngModel)]="lugar"
+            />
+    </div>
+   
+
+
+    <div class="form-control">
+        <label for="fecha_ultima_actualizacion"> <b>Fecha de ultima actualizacion : </b></label>
+        <input 
+            type="date" 
+            name="fecha_ultima_actualizacion" 
+            id="fecha_ultima_actualizacion" 
+            placeholder="Add a new fecha_ultima_actualizacion"
+            [(ngModel)]="fecha_ultima_actualizacion"
+            />
+    </div>
+   
+    <div class="form-control">
+        <label for="image_logo"> <b>Imagen de la Empresa : </b></label>
+        <input 
+            type="text" 
+            name="image_logo" 
+            id="image_logo" 
+            placeholder="Add a new image_logo"
+            [(ngModel)]="image_logo"
+            />
+    </div>
+
+
+    <!-- da ERROR porque devuelve false cuando deberia vdevolver 1 o cero
+    <div class="form-control form-control-check">
+        <label for="reminder"> <b>Reminder : </b></label>
+        <input 
+            type="checkbox" 
+            name="reminder" 
+            id="reminder"
+            [(ngModel)]="reminder"
+            />
+    </div>
+    -->
+
+    <input type="submit" Value="Save Experiencia" class="btn btn-success" data-bs-dismiss="modal">
+</form>

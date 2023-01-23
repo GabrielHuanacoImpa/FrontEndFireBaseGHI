@@ -1,0 +1,20 @@
+{
+	"idiomas": [
+		{
+			"id": "1",
+            "habilidad":"Español",
+            "nivel": 90
+		},
+        {
+			"id": "2",
+            "habilidad":"Ingles Tecnico",
+            "nivel": 30
+		},
+        {
+			"id": "3",
+            "habilidad":"Quechua",
+            "nivel": 30
+		}
+        
+	]
+}

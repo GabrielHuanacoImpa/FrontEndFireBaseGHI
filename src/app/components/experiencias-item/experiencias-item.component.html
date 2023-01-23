@@ -1,0 +1,81 @@
+
+<!-- Es nuestra tarjeta-->
+<div 
+    class="experiencia"
+
+>
+<!-- 
+    [ngClass]="{ reminder: experiencia.reminder }"
+    (click)="onToggle(experiencia)"
+
+-->
+
+    <div class= "row"> 
+        <div class="col-md-2">           
+            <img  class="images" src={{experiencia.image_logo}} width="120">
+       </div>
+        
+        <div class="col-md-9">
+            <h5>
+                {{experiencia.id}} <br>
+                {{experiencia.nombre_empresa}} <br>
+                {{experiencia.es_trabajo_actual}} <br>
+                {{experiencia.descripcion}} <br>
+                {{experiencia.tipo}} <br>
+                {{experiencia.fecha_inicio}} - {{experiencia.fecha_fin}}<br>
+                {{experiencia.lugar}} <br><br>
+            </h5>
+            <h6>
+                Fecha de ultima actualizacion: {{experiencia.fecha_ultima_actualizacion}} 
+            </h6>
+            
+        </div>
+        <div class="col-md-1">
+            <h5>
+                <div class= "row"> 
+                    <div class="col-md-5">
+                        <!--Inicia llamado de Modal Editar -->
+                        <button type="button" class="border border-0" data-bs-toggle="modal" attr.data-bs-target="#ModalExp{{experiencia.id}}">
+                            <fa-icon 
+                            [icon]="faPencil"
+                            [ngStyle] = "{'color': 'green'}" 
+                             
+                            ></fa-icon>
+                        </button>
+                        <!--Fin llamado de Modal Editar --> 
+
+                    </div>
+
+                    <div class="col-md-7">
+                        <fa-icon 
+                        [icon]="faTrashCan"
+                        [ngStyle] = "{'color': 'green'}" 
+                        (click)="onDelete(experiencia)" 
+                        ></fa-icon>
+                    </div>
+                </div>
+            </h5> 
+        </div>
+
+    </div>
+
+    <!--Inicio de Modal Editar -->
+    <div class="modal fade" id="ModalExp{{experiencia.id}}" tabindex="-1" aria-labelledby="ModalEduLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ModalEduLabel">Editar Datos</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+                <app-edit-exp [experiencia]="experiencia" (onEdit)="onEditar($event)" >  </app-edit-exp>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <!--FIN  de Modal Editar Educacion-->
+
+</div>

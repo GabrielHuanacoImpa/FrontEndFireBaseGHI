@@ -1,0 +1,35 @@
+<form #myForm="ngForm" 
+    class="add-form" 
+    (ngSubmit)="onSubmit()"
+    
+    >
+
+    <!--*ngIf="showAddEdu" -->
+    <p><b>Ingrese los siguietes datos : </b></p>
+  
+    <div class="form-control">
+        <label for="habilidad"> <b>Nombre de la Habilidad Blanda : </b></label>
+        <input 
+            type="text" 
+            name="habilidad" 
+            id="habilidad" 
+            placeholder="Add a new habilidad"
+            [(ngModel)]="habilidad"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="nivel"> <b>Nivel : </b></label>
+        <input 
+            type="number" 
+            name="nivel" 
+            id="nivel" 
+            placeholder="Add a new nivel"
+            [(ngModel)]="nivel"
+            />
+    </div>
+
+    
+    <input type="submit" Value="Save SoftSkills" class="btn btn-success" data-bs-dismiss="modal">
+</form>
+

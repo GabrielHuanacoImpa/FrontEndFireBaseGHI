@@ -1,0 +1,76 @@
+
+<section class="row row mt-100 border border-dark rounded align-items-center" style="height: auto">
+    <article>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8"><h3>Experiencia</h3></div>
+            <div class="col-md-2">
+                <!--Llamo al modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalAddExp">
+                    Alta Experiencia
+                    
+                </button>
+                <!--fin Llamo al modal -->
+            </div>
+            <div class="col-md-2">  
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">                            
+                    <button class="btn btn-default" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="assets/icons8-plus-minus.png" width="30" /> 
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <!--    
+                <h1> hola collapse</h1>
+                <h1> hola collapse</h1>
+                <h1> hola collapse</h1>
+                    -->   
+                <!--recibimos un evento-->
+                <!--
+                <app-add-experiencia
+                    (onAddTask)="addTask($event)" 
+                ></app-add-experiencia>
+                -->
+
+                <app-experiencias-item 
+                *ngFor="let experiencia of experiencias"
+                [experiencia] = "experiencia"
+                (onDeleteExperiencia)="deleteExperiencia(experiencia)"
+                
+                >    
+                <!--(onToggleReminder)="toggleReminder(experiencia)"-->
+                </app-experiencias-item> 
+
+
+            </div> <!--fin card card-body-->
+        </div> <!--fin collapse  -->
+    </div> <!-- fin container-->
+    </article>
+</section>
+<!--Modal-->
+<div class="modal fade" id="ModalAddExp" tabindex="-1" aria-labelledby="ModalEduLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalEduLabel"><b>Alta de nueva Experiencia Laboral</b></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+            <app-add-exp
+            
+                (onAddExp)="addExperiencia($event)"
+            > </app-add-exp>
+            <!--
+            <app-edit-edu [educacion]="educacion" (onEdit)="onEditar($event)" >  </app-edit-edu>
+        -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!--Fin Modal-->  
+

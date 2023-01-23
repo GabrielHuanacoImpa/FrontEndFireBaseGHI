@@ -1,0 +1,147 @@
+<div class="container-fluid">
+    <!------------------------------------------------------------>
+    <!--encabezado-->
+  
+    <header>  
+       
+        <div class="bg-primary p-6 text-white">
+            <div class="container-fluid" > 
+                
+                 <div class="row mt-10 border border-dark rounded align-items-center" >   
+                    <div class="col-sm-1">                        
+                        <img src="assets/APLogo-20-20[2-Etapa].png" class="img-fluid" alt="Argentina Programa - #YoProgramo" width="60" height="auto">   
+                    </div>
+                    <div class="col-sm-2">
+                        <h6> Argentina Programa #YoProgramo</h6>
+                    </div>
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="https://web.whatsapp.com/">
+                            <img src="assets/icons8-whatsapp-48.png" style="height: 30px;"/>
+                        </a>
+                        <a href="mailto:gabrielhuanaco@gmail.com">
+                            <img src="assets/icons8-gmail-48.png" style="height: 30px;"/>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <img src="assets/facebook.png" style="height: 30px;"/>
+                        </a>                                                       
+                    </div>
+                    <div class="col-sm-2">
+                        
+                         
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <!--
+                            <button class="btn btn-success" type="button">Login</button>
+                            -->
+                            <app-modal-login></app-modal-login>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- background-image: url('assets/Esquina_Totoral_3.jpg');-->
+        <div *ngFor="let header of headerList">   
+            <!--banner que me represente-->
+            <div class="container-fluid" >
+                <!-- Background image -->
+                <div 
+                class="bg-image"
+                            
+                style="
+                
+                background-image: url({{header.url_foto_fondo}});
+                height: 45vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #cccccc;
+                position:relative;
+                            
+                ">
+                <img src={{header.url_foto}} class="rounded-circle" alt="Foto de Gabriel" width="150" height="auto" 
+                style="position:absolute; bottom: -25px; left: 10px">
+                
+                    <!-- <div class="bg-success p-2 text-white"> -->
+                    <div class="text-white">
+                        <div class="row">
+                            <div class="col-sm-6"> 
+                                <br><br>
+                                
+                            </div>
+                            <div class="col-sm-6">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-sm-7"> 
+                                
+                             <!--   
+                                
+                                <img src={{header.url_foto}} class="rounded-circle" alt="Foto de Gabriel" width="150" height="auto">
+                            -->
+                            </div>
+                        
+                            <div class="col-sm-5">
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Información profesional resumida-->
+            <div class="bg-primary p-6 text-white">
+                <div class="container-fluid"> 
+                    <div class="row mt-10 border border-dark rounded align-items-center" >
+                        <div class="col-sm-7">                            
+                            <br>
+                            <h3>{{header.nombre}} {{header.apellido}}</h3>
+                            <h6>{{header.ocupacion}}</h6>
+                            <h6>{{header.domicilio}}                               
+                                <a href="http://www.google.com" class="link-dark" target="_blank">Informacion de contacto.</a>
+                            </h6>    
+                        </div>
+                        <div class="col-sm-5" >                        
+                            <figure class="text-end">
+                                <blockquote class="blockquote">
+                                <h6>{{header.direccion_fondo}}<br> {{header.nombre_fondo}}.</h6>
+                                </blockquote>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        
+            <!--Acerca de-->
+
+            <div class="bg-muted p-6 text-black">
+                <div class="container-fluid"> 
+                    <div class="row mt-10 border border-dark rounded align-items-center" >
+                        <div class="col-sm-11">
+                            <h4>Acerca de</h4>
+                            <p>{{header.sobre_mi}}.</p>
+                        </div>
+                        <div class="col-sm-1">                            
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <!--                            
+                                <button class="btn btn-default">
+                                    <img src="assets/icons8-edit.gif" width="30" /> 
+                                </button>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--fin *ngfor-->
+       
+
+  
+    </header>
+
+</div>

@@ -1,0 +1,129 @@
+{
+	"soft-Skills": [
+		{
+			"id": "1",
+            "habilidad":"Comunicación",
+            "nivel": 70
+		},
+        {
+			"id": "2",
+            "habilidad":"Multitarea",
+            "nivel": 30
+		},
+        {
+			"id": "3",
+            "habilidad":"Habilidades organizativas",
+            "nivel": 50
+		},
+        {
+			"id": "4",
+            "habilidad":"Iniciativa",
+            "nivel": 80
+		},
+        {
+			"id": "5",
+            "habilidad":"Resiliencia",
+            "nivel": 50
+		},
+        {
+			"id": "6",
+            "habilidad":"Responsabilidad",
+            "nivel": 90
+		},
+        {
+			"id": "7",
+            "habilidad":"Asumir riesgos",
+            "nivel": 60
+		},
+        {
+			"id": "8",
+            "habilidad":"Creatividad",
+            "nivel": 60
+		},
+        {
+			"id": "9",
+            "habilidad":"Autorregulación",
+            "nivel": 70
+		},
+        {
+			"id": "10",
+            "habilidad":"Adaptabilidad",
+            "nivel": 70
+		},
+        {
+			"id": "11",
+            "habilidad":"Gestión del tiempo",
+            "nivel": 80
+		},
+        {
+			"id": "12",
+            "habilidad":"Autodesarrollo",
+            "nivel": 70
+		},
+        {
+			"id": "13",
+            "habilidad":"Trabajo en equipo",
+            "nivel": 80
+		},
+        {
+			"id": "14",
+            "habilidad":"Trabajo en red",
+            "nivel": 70
+		},
+        {
+			"id": "15",
+            "habilidad":"Empatía",
+            "nivel": 40
+		},
+        {
+			"id": "16",
+            "habilidad":"Compasión",
+            "nivel": 70
+		},
+        {
+			"id": "17",
+            "habilidad":"Sensibilidad cultural",
+            "nivel": 70
+		},
+        {
+			"id": "18",
+            "habilidad":"Habilidades de comunicación",
+            "nivel": 70
+		},
+        {
+			"id": "19",
+            "habilidad":"Liderazgo",
+            "nivel": 90
+		},
+        {
+			"id": "20",
+            "habilidad":"Organización",
+            "nivel": 70
+		},
+        {
+			"id": "21",
+            "habilidad":"Resolución de problemas",
+            "nivel": 70
+		},
+        {
+			"id": "22",
+            "habilidad":"Pensamiento crítico",
+            "nivel": 70
+		},
+        {
+			"id": "23",
+            "habilidad":"Proactivo",
+            "nivel": 70
+		},
+        {
+			"id": "24",
+            "habilidad":"Buenos modales",
+            "nivel": 90
+		},
+        {
+			"id": "25",
+            "habilidad":"Sentido del humor",
+            "nivel": 70
+		}
+	]
+}

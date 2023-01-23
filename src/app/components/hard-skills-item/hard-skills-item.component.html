@@ -1,0 +1,91 @@
+
+
+<!-- Es nuestra tarjeta-->
+
+<div 
+    class="hardSkill"
+
+>
+<!--
+
+    [ngClass]="{ reminder: hardSkill.reminder }"
+    (click)="onToggle(hardSkill)"
+-->
+    <div class= "row"> 
+        <div class="col-md-2">           
+            
+       </div>
+        
+        <div class="col-md-9">
+            <h5>
+                {{hardSkill.id}} 
+            </h5>
+            <h5>
+                <circle-progress
+  
+                [percent]="hardSkill.nivelH"
+                [title]="hardSkill.nivelH.toString()"
+                [subtitle]="hardSkill.habilidadH"
+                [titleColor]="'black'"
+                [radius]="100"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="10"
+                [outerStrokeColor]="'green'"
+                [innerStrokeColor]="'#e7e8ea'"
+                [animation]="true"
+                [animationDuration]="1000"
+              ></circle-progress>              	              	              	              	              	
+                	
+                	              	              	              
+            </h5>
+
+
+        </div>
+        <div class="col-md-1">
+            <h5>
+                <div class= "row"> 
+                    <div class="col-md-5">
+                        <!--Inicia llamado de Modal Editar -->
+                        <button type="button" class="border border-0" data-bs-toggle="modal" attr.data-bs-target="#ModalHS{{hardSkill.id}}">
+                            <fa-icon 
+                            [icon]="faPencil"
+                            [ngStyle] = "{'color': 'green'}" 
+                            
+                            ></fa-icon>
+                        </button>
+                        <!--Fin llamado de Modal Editar --> 
+                    </div>
+
+                    <div class="col-md-7">
+                        <fa-icon 
+                        [icon]="faTrashCan"
+                        [ngStyle] = "{'color': 'green'}" 
+                        (click)="onDelete(hardSkill)" 
+                        ></fa-icon>
+                    </div>
+                </div>
+            </h5> 
+        </div>
+
+    </div>
+    <!--Inicio de Modal Editar -->
+    <div class="modal fade" id="ModalHS{{hardSkill.id}}" tabindex="-1" aria-labelledby="ModalEduLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ModalEduLabel">Editar Datos</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+                <app-edit-hard-s [hardSkill]="hardSkill" (onEdit)="onEditar($event)" >  </app-edit-hard-s>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <!--FIN  de Modal Editar Educacion-->
+
+</div>
+

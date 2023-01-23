@@ -1,0 +1,17 @@
+{
+	"Persona": [
+		{
+			"id": "1",
+			"nombres": "Gabriel",
+			"apellido": "Huanaco Impa",
+			"fecha_nacimiento": "18/03/1979",
+			"nacionalidad": "Boliviano",
+			"mail": "gabrielhuanaco@gmail.com",
+			"sobre_mi": "MAESTRO MAYOR DE OBRA, PROFESOR DE EDUCACION SECUNDARIA DE LA MODALIDAD TECNICO PROFESIONAL con concurrencia con título de base e informático",
+			"ocupación": "Programador Full Stack",
+			"image_background_header": "https://img/Esquina Totoral 3.jpg",
+			"image_perfil": "https://img/foto_Perfil.jpg",
+			"id_domicilio":"San salvador de Jujuy, Jujuy, Argentina"
+		}
+	]
+}

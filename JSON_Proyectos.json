@@ -1,0 +1,95 @@
+{
+	"proyectos": [
+		{
+			"id": "1",
+			"nombre_proyecto": "Construccion de Estructura de Hormigon Armado de viviendas",
+			"fecha_realizacion": "1990 - 2021 - 31 años",
+            "descripcion": "Construccion bases, vigas de fundacion, columnas, vigas y losas. Trabajos de albañileria.",
+            "link": "",
+            "imagenes":"",
+            "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
+            "tipo_ocupacion":"Independiente- Jornada Parcial",
+            "ultima_actualizacion": "Última actualización hace 3 minutos",			
+            "image_logo": "assets/P-Armador.jpg"
+			
+		},
+        {
+			"id": "2",
+			"nombre_proyecto": "Dirección Tecnica de Obras",
+			"fecha_realizacion": "2000 - 2022 - 22 años",
+            "descripcion": "Dirigir y controlar la ejecucion de la mano deobra de elementos estructurales segun los planos y calculos de estructuras debidamente aprobadas.",
+            "link": "",
+            "imagenes":"",
+            "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
+            "tipo_ocupacion":"Independiente- Jornada Parcial",
+            "ultima_actualizacion": "Última actualización hace 3 minutos",
+            "image_logo": "assets/icons8-courier-64.png"
+			
+		},
+        {
+			"id": "3",
+			"nombre_proyecto": "Proyectos de Planos Tecnicos de viviendas unifamiliares",
+			"fecha_realizacion": "2000 - 2022 - 22 años",
+            "descripcion": "Confección de carpeta tecnica: planos Municipales, Plano de Obra, Instalación Electrica, Instalación Sanitaria, Instalación de Gas y Detalles Constructivos. El Plano Municipal, junto con otros requisitos fue presentado a Obras particulares para su posterior aprobacion y autorizacion para ser ejecutada con posterioridad.",
+            "link": "",
+            "imagenes":"",
+            "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
+            "tipo_ocupacion":"Independiente- Jornada Parcial",
+            "ultima_actualizacion": "Última actualización hace 3 minutos",
+            "image_logo": "assets/icons8-floor-plan-64.png"
+			
+		},
+        {
+			"id": "4",
+			"nombre_proyecto": "Reparacion y Mantenimiento de PC",
+			"fecha_realizacion": "2005 - 2022 - 17 años",
+            "descripcion": "Instalacion y mantenimiento de Software (Sistemas Operativos, Herramientas Office, editor de video, Antivirus, Diseño asistido por computador) y Hardware (computadora de escritorios, Notebook, Netbook).",
+            "link": "",
+            "imagenes":"",
+            "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
+            "ultima_actualizacion": "Última actualización hace 3 minutos",
+            "tipo_ocupacion":"Independiente- Jornada Parcial",
+			"image_logo": "assets/icons8-keyboard-and-mouse-64.png"
+			
+		},
+        {
+			"id": "5",
+			"nombre_proyecto": "ANALISTA DEL CONOCIMIENTO - TRAYECTO PROGRAMADOR.",
+			"fecha_realizacion": "2018 - 2018 - 1 años",
+            "descripcion": "Este curso abalado por Inet-Ministerio de Producción-Presidencia de la Nación, dictado en escuela Tecnica Nº2, de manera presencial. Se vio una introduccion a la informática y se realizaron varios proyectos con Lenguaje de Programación Java",
+            "link": "http://www.inet.edu.ar/index.php/tag/111-mil-programadores/",
+            "imagenes":"",
+            "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
+            "ultima_actualizacion": "Última actualización hace 3 minutos",
+            "tipo_ocupacion":"Independiente- Jornada Parcial",
+			"image_logo": "assets/logo111MIL.png"
+			
+		},
+        {
+			"id": "6",
+			"nombre_proyecto": "Primera etapa del Plan Argentina Programa #SéProgramar.",
+			"fecha_realizacion": "2022 - 2022 - 3 meses",
+            "descripcion": "Este curso abalado por Ministerio de Desarrollo Productivo Argentina - Inti - cessi Argentina, dictado en forma online, Se vio los siguientes capitulos: Capítulo 1 Fundamentos [Gobstones](Cantidad de ejercicios 104 - Dedicación estimada 20 horas). Capítulo 2 Programación Imperativa [JavaScript](Cantidad de ejercicios 90 - Dedicación estimada 20 horas),<br> Capítulo 3 Programación con Objetos [Ruby](Cantidad de ejercicios 96 - Dedicación estimada 20 horas)",
+            "link": "https://seprogramar.inti.gob.ar/",
+            "imagenes":"",
+            "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
+            "ultima_actualizacion": "Última actualización hace 3 minutos",
+            "tipo_ocupacion":"Independiente- Jornada Parcial",
+			"image_logo": "assets/argprog_logo[1-Etapa].png"
+			
+		},
+        {
+			"id": "7",
+			"nombre_proyecto": "Segunda etapa del Plan Argentina Programa #YoProgramo 3ra edición.",
+			"fecha_realizacion": "Julio 2022 - Enero 2023 - 7 meses",
+            "descripcion": "Este curso abalado por Ministerio de Desarrollo Productivo Argentina - Inti, dictado en forma online. Se vio los siguientes Modulos : Módulo 1 - Introducción a Desarrollo Web y Aplicaciones. Módulo 2 - Desarrollo Front End estático<br>",
+            "link": "https://argentinaprograma.inti.gob.ar/",
+            "imagenes":"",
+            "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
+            "ultima_actualizacion": "Última actualización hace 3 minutos",
+            "tipo_ocupacion":"Independiente- Jornada Parcial",
+			"image_logo": "assets/APLogo-20-20[2-Etapa].png"
+			
+		}
+	]
+}

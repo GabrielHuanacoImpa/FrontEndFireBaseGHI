@@ -1,0 +1,82 @@
+<section class="row row mt-100 border border-dark rounded align-items-center" style="height: auto">
+    <article>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8"><h3>Educación</h3></div>
+            <div class="col-md-3">
+            <!-- Boton Alta-->
+                <app-button-add-edu 
+                        color="{{showAddEdu ? 'red' : 'green'}}" 
+                        text="{{showAddEdu ? 'Close Alta' : 'Alta Educacion.'}}" 
+                        (btnClick)="toggleAddEdu()"
+                        
+                        
+                >    
+                </app-button-add-edu>
+                <!--*ngIf="hasRoute('/')"  -->   
+
+                <!-- si verdadero hace Close Task y cierra el formulario 
+                    que se esta editando
+
+                    hasRoute('/') nos dice que is estamos en raiz 
+                    se muestar el componente header, sino no lo muestra
+                -->
+
+        
+            <!-- fin Boton Alta-->
+            </div>
+            <div class="col-md-1">  
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">                            
+                    <button class="btn btn-default" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleEdu" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="assets/icons8-plus-minus.png" width="30" /> 
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <app-add-edu
+            (onAddEdu)="addEducacion($event)"
+        > </app-add-edu>
+        <!--
+        <app-edit-edu>
+            (onEditEdu)="editEducacion($event)"
+        </app-edit-edu>
+-->
+
+        <div class="collapse" id="collapseExampleEdu">
+            <div class="card card-body">
+ 
+                <!--recibimos un evento-->
+                <!--
+                <app-add-educacion
+                    (onAddEducacion)="addEducacion($event)" 
+                ></app-add-educacion>
+                -->
+
+                <app-educaciones-item 
+                *ngFor="let educacion of educaciones"
+                [educacion] = "educacion"
+                (onDeleteEducacion)="deleteEducacion(educacion)"
+
+                
+                
+                >
+                
+                <!--
+                (onToggleReminder)="toggleReminder(educacion)"
+                (onEditEducacion)="editEducacion(educacion)"
+
+                -->
+                
+                </app-educaciones-item> 
+
+
+            </div> <!--fin card card-body-->
+        </div> <!--fin collapse  -->
+    </div> <!-- fin container-->
+    
+    </article>
+    
+</section>
+
+

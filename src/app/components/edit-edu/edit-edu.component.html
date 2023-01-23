@@ -1,0 +1,99 @@
+<p><b>Edite los datos para de la Expericencia EDUCATIVA</b></p>
+
+<form #myForm="ngForm" 
+    class="add-form" 
+    (ngSubmit)="onSubmit()"
+   
+    
+    >
+
+    <div class="form-control">
+        <label for="institucion"> <b>Institucion : </b></label>
+        <input 
+            type="text" 
+            name="institucion" 
+            id="institucion" 
+            placeholder="Add a new institucion"
+            [(ngModel)]="institucion"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="titulo"> <b>Titulo : </b></label>
+        <input 
+            type="text" 
+            name="titulo" 
+            id="titulo" 
+            placeholder="Add a new titulo"
+            [(ngModel)]="titulo"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="domicilio"> <b>Domicilio : </b></label>
+        <input 
+            type="text" 
+            name="domicilio" 
+            id="domicilio" 
+            placeholder="Add a new domicilio"
+            [(ngModel)]="domicilio"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="fecha_inicio"> <b>Fecha de inicio : </b></label>
+        <input 
+            type="date" 
+            name="fecha_inicio" 
+            id="fecha_inicio" 
+            placeholder="Add a new fecha_inicio"
+            [(ngModel)]="fecha_inicio"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="fecha_fin"> <b>Fecha de fin : </b></label>
+        <input 
+            type="date" 
+            name="fecha_fin" 
+            id="fecha_fin" 
+            placeholder="Add a new fecha_fin"
+            [(ngModel)]="fecha_fin"
+            />
+    </div>
+    <div class="form-control">
+        <label for="image_institucion"> <b>Imagen de la institucion : </b></label>
+        <input 
+            type="text" 
+            name="image_institucion" 
+            id="image_institucion" 
+            placeholder="Add a new image_institucion"
+            [(ngModel)]="image_institucion"
+            />
+    </div>
+
+    <div class="form-control">
+        <label for="ultima_actualizacion"> <b>Fecha de ultima actualizacion : </b></label>
+        <input 
+            type="date" 
+            name="ultima_actualizacion" 
+            id="ultima_actualizacion" 
+            placeholder="Add a new ultima_actualizacion"
+            [(ngModel)]="ultima_actualizacion"
+            />
+    </div>
+
+    <!-- da ERROR porque devuelve false cuando deberia vdevolver 1 o cero
+    <div class="form-control form-control-check">
+        <label for="reminder"> <b>Reminder : </b></label>
+        <input 
+            type="checkbox" 
+            name="reminder" 
+            id="reminder"
+            [(ngModel)]="reminder"
+            />
+    </div>
+    -->
+
+    <input type="submit" Value="Save Educacion" class="btn btn-success " data-bs-dismiss="modal">
+</form>

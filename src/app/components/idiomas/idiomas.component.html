@@ -1,0 +1,73 @@
+<section class="row row mt-100 border border-dark rounded align-items-center" style="height: auto">
+    <article>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8"><h3>Nivel de idiomas</h3></div>
+                <div class="col-md-2">
+                    <!--Llamo al modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalAddIdio">
+                        Alta Idioma
+                        
+                    </button>
+                    <!--fin Llamo al modal -->
+                </div>
+                <div class="col-md-2">  
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">                            
+                        <button class="btn btn-default" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleId" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="assets/icons8-plus-minus.png" width="30" /> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="collapse" id="collapseExampleId">
+                <div class="card card-body">
+  
+                <!--recibimos un evento-->
+                <!--
+                <app-add-idioma
+                    (onAddIdioma)="addIdioma($event)" 
+                ></app-add-idioma>
+                -->
+                <h4>  </h4>
+                <app-idiomas-item 
+                *ngFor="let idioma of idiomas"
+                [idioma] = "idioma"
+                (onDeleteIdioma)="deleteIdioma(idioma)"
+                (onToggleReminder)="toggleReminder(idioma)"
+                >    
+                </app-idiomas-item> 
+            
+                 
+
+                
+                </div> <!--fin card card-body-->
+            </div> <!--fin collapse  -->
+        </div> <!-- fin container-->
+    </article>
+</section>
+
+<!--Modal-->
+<div class="modal fade" id="ModalAddIdio" tabindex="-1" aria-labelledby="ModalEduLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalEduLabel"><b>Alta de nuevo Idioma</b></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+            <app-add-idioma
+            
+                (onAddIdioma)="addIdioma($event)"
+            > </app-add-idioma>
+            <!--
+            <app-edit-edu [educacion]="educacion" (onEdit)="onEditar($event)" >  </app-edit-edu>
+        -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!--Fin Modal-->  
+

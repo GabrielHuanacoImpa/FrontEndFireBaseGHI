@@ -1,0 +1,124 @@
+{
+	"hard-Skills": [
+		{
+			"id": "1",
+            "habilidad":"S.O. Windows 11",
+            "nivel": 40
+		},
+        {
+			"id": "2",
+            "habilidad":"S.O. Linux",
+            "nivel": 15
+		},
+        {
+			"id": "3",
+            "habilidad":"Turbo Pascal",
+            "nivel": 50
+		},
+        {
+			"id": "4",
+            "habilidad":"Lenguaje C",
+            "nivel": 50
+		},
+        {
+			"id": "5",
+            "habilidad":"Lenguaje C++",
+            "nivel": 50
+		},
+        {
+			"id": "6",
+            "habilidad":"Lenguaje Java",
+            "nivel": 50
+		},
+        {
+			"id": "7",
+            "habilidad":"Lenguaje JavaScript",
+            "nivel": 40
+		},
+        {
+			"id": "8",
+            "habilidad":"Lenguaje Ruby",
+            "nivel": 40
+		},
+        {
+			"id": "9",
+            "habilidad":"Visual Studio Code",
+            "nivel": 30
+		},
+        {
+			"id": "10",
+            "habilidad":"AutoCad",
+            "nivel": 60
+		},
+        {
+			"id": "11",
+            "habilidad":"SketchUp",
+            "nivel": 50
+		},
+        {
+			"id": "12",
+            "habilidad":"Lenguaje FoxPro",
+            "nivel": 40
+		},
+        {
+			"id": "13",
+            "habilidad":"Lenguaje Cobol",
+            "nivel": 40
+		},
+        {
+			"id": "14",
+            "habilidad":"Lenguaje LISP",
+            "nivel": 30
+		},
+        {
+			"id": "15",
+            "habilidad":"Concurrent Pascal",
+            "nivel": 40
+		},
+        {
+			"id": "16",
+            "habilidad":"MS. Word",
+            "nivel": 40
+		},
+        {
+			"id": "17",
+            "habilidad":"Excel",
+            "nivel": 40
+		},
+        {
+			"id": "18",
+            "habilidad":"Ms. Power Point",
+            "nivel": 30
+		},
+        {
+			"id": "19",
+            "habilidad":"Camtasia 2020",
+            "nivel": 30
+		},
+        {
+			"id": "20",
+            "habilidad":"HTML5",
+            "nivel": 50
+		},
+        {
+			"id": "21",
+            "habilidad":"CSS",
+            "nivel": 40
+		},
+        {
+			"id": "22",
+            "habilidad":"Bootstrap v5.0",
+            "nivel": 40
+		},
+        {
+			"id": "23",
+            "habilidad":"TypeScript",
+            "nivel": 40
+		},
+        {
+			"id": "24",
+            "habilidad":"Photoshopt",
+            "nivel": 15
+		}
+	]
+}

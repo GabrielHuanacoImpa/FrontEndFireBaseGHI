@@ -1,0 +1,42 @@
+{
+  "experiencias": [
+    {
+      "id": "1",
+      "tipo": "Oficial Armador de Estructuras de Hormigon Armado",
+      "tiempo": "Independiente- Jornada Parcial",
+      "fecha_experiencia": "Enero 1990 - actualidad - 32 años - 7 meses ",
+      "Lugar": "San Salvador de Jujuy, jujuy, Argentina",
+      "fecha_ultima_actualizacion": "Última actualización hace 3 minutos",
+      "image_logo": "assets/icons8-construction-100.png",
+      "reminder": false
+    },
+    {
+      "id": "2",
+      "tipo": "Director Tecnico de Obras",
+      "tiempo": "Independiente- Jornada Parcial",
+      "fecha_experiencia": "Enero 2000 - actualidad - 22 años - 7 meses",
+      "Lugar": "San Salvador de Jujuy, jujuy, Argentina",
+      "fecha_ultima_actualizacion": "Última actualización hace 3 minutos",
+      "image_logo": "assets/icons8-courier-64.png",
+      "reminder": false
+    },
+    {
+      "id": "3",
+      "tipo": "Proyectista de Planos Tecnicos de viviendas",
+      "tiempo": "Independiente- Jornada Parcial",
+      "fecha_experiencia": "Enero 2000 - actualidad - 22 años - 7 meses",
+      "Lugar": "San Salvador de Jujuy, jujuy, Argentina",
+      "fecha_ultima_actualizacion": "Última actualización hace 3 minutos",
+      "image_logo": "assets/icons8-floor-plan-64.png"
+    },
+    {
+      "id": "4",
+      "tipo": "Reparacion y Mantenimiento de PC",
+      "tiempo": "Independiente- Jornada Parcial",
+      "fecha_experiencia": "Enero 2007 - actualidad - 15 años - 7 meses",
+      "Lugar": "San Salvador de Jujuy, jujuy, Argentina",
+      "fecha_ultima_actualizacion": "Última actualización hace 3 minutos",
+      "image_logo": "assets/icons8-keyboard-and-mouse-64.png"
+    }
+  ]
+}

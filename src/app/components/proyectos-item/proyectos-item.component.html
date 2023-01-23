@@ -1,0 +1,85 @@
+
+<!-- Es nuestra tarjeta-->
+<div 
+    class="proyecto"
+
+>
+<!-- 
+    [ngClass]="{ reminder: proyecto.reminder }"
+    (click)="onToggle(proyecto)"
+
+-->
+
+
+    <div class= "row"> 
+        <div class="col-md-2">           
+            <img  class="images" src={{proyecto.url_image_logo}} width="120">
+       </div>
+        
+        <div class="col-md-9">
+            <h5>
+                {{proyecto.id}} <br>
+                {{proyecto.nombre_proyecto}} <br>
+                {{proyecto.fecha_inicioP}} - {{proyecto.fecha_finP}} <br>
+                {{proyecto.descripcionP}} <br>
+                {{proyecto.link}} <br>
+                {{proyecto.url_imagenes}} <br>
+                {{proyecto.domicilio}} <br>
+                {{proyecto.tipo_ocupacion}} <br><br>
+            </h5>
+            <h6>
+                Fecha de ultima actualizacion: {{proyecto.ultima_actualizacion}} 
+            </h6>
+                      
+           
+            
+        </div>
+        <div class="col-md-1">
+            <h5>
+                <div class= "row"> 
+                    <div class="col-md-5">
+                        <!--Inicia llamado de Modal Editar -->
+                        <button type="button" class="border border-0" data-bs-toggle="modal" attr.data-bs-target="#ModalExp{{proyecto.id}}">
+                            <fa-icon 
+                            [icon]="faPencil"
+                            [ngStyle] = "{'color': 'green'}" 
+                            
+                            ></fa-icon>
+                        </button>
+                        <!--Fin llamado de Modal Editar --> 
+                    </div>
+
+                    <div class="col-md-7">
+                        <fa-icon 
+                        [icon]="faTrashCan"
+                        [ngStyle] = "{'color': 'green'}" 
+                        (click)="onDelete(proyecto)" 
+                        ></fa-icon>
+                    </div>
+                </div>
+            </h5> 
+        </div>
+
+    </div>
+
+    <!--Inicio de Modal Editar -->
+    <div class="modal fade" id="ModalExp{{proyecto.id}}" tabindex="-1" aria-labelledby="ModalEduLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ModalEduLabel">Editar Datos</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+                <app-edit-pro [proyecto]="proyecto" (onEdit)="onEditar($event)" >  </app-edit-pro>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <!--FIN  de Modal Editar Educacion-->
+
+</div>
+
